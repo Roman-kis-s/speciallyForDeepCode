@@ -1,0 +1,22 @@
+#container{
+    box-sizing: border-box;
+    width: 60%;
+    margin: 3% auto;
+}
+textarea{
+    width: 100%;
+}
+#calculateButton{
+    position: absolute;
+    bottom: -20px;
+    right: 0px;
+}
+#outputArea{
+    font-size: larger;
+}
+#inputArea{
+    position: relative;
+    display: inline-block;
+}
+
+
