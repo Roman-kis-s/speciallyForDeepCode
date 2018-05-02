@@ -9,6 +9,11 @@ calculateButton.addEventListener('click', function () {
     showResult(calculate(textArea.value));
 });
 
+/**
+ *
+ * @param inputString
+ * @returns {{numberOfWords: number, lengthOfMaxWord, lengthOfMinWord, averageLengthOfWords: number}}
+ */
 function calculate(inputString) {
     // const words = inputString.trim().split(" ").filter((word) => word.length > 1 || word.match(/[a-z]/i) );
     const words = inputString.trim()
@@ -37,6 +42,10 @@ function calculate(inputString) {
     return result;
 }
 
+/**
+ *
+ * @param result
+ */
 function showResult(result) {
     numberOfWords.textContent = result.numberOfWords;
     lengthOfMaxWord.textContent = result.lengthOfMaxWord;
